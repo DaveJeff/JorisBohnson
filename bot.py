@@ -1,8 +1,9 @@
 import hikari
 import lightbulb
 import random
+import os
 
-bot = lightbulb.BotApp(token="OTcyMjQzMTYxODczMjUyNDgz.YnWOAQ.rczBsUhfn0yf9EvdRRNKIjVX1ss",
+bot = lightbulb.BotApp(token=os.environ["DISCORD_TOKEN"],
                        default_enabled_guilds=(972244644043837461, 892063974944821309, 896115278872715265))
 
 
